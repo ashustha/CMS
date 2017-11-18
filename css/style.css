@@ -1,0 +1,246 @@
+body {
+  color: #424242;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 30px;
+}
+
+ul {
+  margin: 0;
+}
+
+i {
+  margin-right: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-wrapper{
+  padding:30px 0;
+  background-color: #353333;
+  border-bottom: 10px solid #ffa500;
+}
+
+.navbar-wrapper ul li{
+  float: left;
+  padding-right: 15px;
+}
+
+.navbar-wrapper>ul>li>a:hover{
+  color: #ffffff;
+}
+
+.navbar-wrapper ul li a{
+  color: #f4f4f4;
+  font-size: 14px;
+
+}
+
+.navbar-wrapper .dropdown ul li a{
+  color: #000000;
+  font-size: 14px;
+  display: block;
+}
+
+.navbar-wrapper .dropdown ul li{
+  float: none;
+  padding-right:0;
+}
+
+.navbar-wrapper h1{
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.dropdown-menu{
+  border-radius: 0;
+}
+
+.dropdown-menu li{
+  padding:5px 0;
+}
+
+
+/*------------------navbar-----------------------*/
+
+.nav-tabs{
+  padding-top: 20px;
+  border-bottom: none;
+}
+
+.nav-tabs>li>a{
+  border-radius: 0px;
+}
+
+.nav-tabs>li>a:hover{
+  color: #353333;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  color: #ffffff;
+  background-color: #150f0f;
+  border:1px solid #150f0f;
+}
+
+
+.tab-content{
+  padding:30px 0;
+}
+
+
+
+/*-----------------------form----------------------*/
+
+
+.title{
+  text-align:center;
+}
+
+.tab-content{
+  padding:30px;
+}
+
+
+.form-group label{
+  font-size: 16px;
+  font-weight: 400;
+  
+}
+
+input:focus ~ label {
+  color: red;
+}
+
+.form-control:focus{
+  box-shadow: none;
+  border-color: #ffa500;
+}
+
+.tab-content h1{
+  margin-bottom: 35px;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.title>h1:after{
+  position: absolute;
+  left: 35px;
+  bottom: 0px;
+  width: 75px;
+  height: 3px;
+  content: "";
+  transform: translateX(-50%);
+  background: #ffa500;
+}
+
+.form-control{
+  border-radius: 0px;
+  height: 35px;
+}
+
+.preview-btn,
+.post-btn{
+  border-radius: 0px;
+  margin-right: 10px;
+  padding:10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.preview-btn{
+  background-color: #ffa500;
+}
+
+.post-btn{
+  background-color: #3da53d;
+}
+
+/*-------------------footer------------*/
+
+
+footer{
+  padding:50px 0;
+}
+
+footer h3{
+  font-size: 12px;
+  float: right;
+}
+
+
+/*---------------dashboard---------------*/
+
+
+.data-brief{
+  padding:20px 30px;
+  background-color: #f4f4f4;
+  border:1px solid #f4f4f4;
+  border-radius: 5px;
+  text-align:center;
+}
+
+.data>h1{
+  font-size: 100px;
+  font-weight: 200;
+  position: relative;
+}
+
+.data>h1:after{
+  position: absolute;
+  left: 55px;
+  bottom: 0px;
+  width: 75px;
+  height: 3px;
+  content: "";
+  transform: translateX(-50%);
+  background: #ffa500;
+}
+
+.booking{
+  border:1px solid #f4f4f4;
+  border-radius: 5px;
+  padding:10px;
+  margin-top: 20px;
+}
+
+.booking h1{
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+
+.btn{
+  border-radius: 0px;
+}

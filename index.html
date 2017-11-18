@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CMS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="travel, trip, hotels">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Oswald:300,400,500,700" rel="stylesheet"> 
+
+  </head>
+  <body>
+    <header>
+      <div class="navbar-wrapper">
+        <div class="container">
+          <ul class="pull-right">
+            <li>
+              <a href="#"><i class="fa fa-globe" aria-hidden="true"></i> View Website</a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Sagar
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li> <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li> 
+              </ul>
+            </li>
+          </ul>
+          <h1><i class="fa fa-map-o" aria-hidden="true"></i> Ghum Gham ADMIN panel</h1>
+        </div>
+        <div class="container">
+          <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#dashboard">Dashboard</a></li>
+              <li><a data-toggle="tab" href="#add-trip">Add Trips</a></li>
+              <li><a data-toggle="tab" href="#update-site">Update Site</a></li>
+              <li><a data-toggle="tab" href="#update-existing-trips">Update existing trips</a></li>
+            </ul>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="tab-content">
+          <div id="dashboard" class="tab-pane fade in active">
+            <div class="title">
+              <h1>Dashboard</h1>
+            </div>
+            <div class="data-brief">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="data">
+                    <h1>50</h1>
+                  </div>
+                  <div class="data-heading">
+                    <h4>Bookings</h4>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="data">
+                    <h1>28</h1>
+                  </div>
+                  <div class="data-heading">
+                    <h4>Successful Trips</h4>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="data">
+                    <h1>18</h1>
+                  </div>
+                  <div class="data-heading">
+                    <h4>Canceled Bookings</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="booking">
+             <div class="row">
+               <div class="col-md-12">
+                 <div class="table-responsive">
+                  <h1>Booking Requests</h1>
+                   <table class="table table-bordered table-striped">
+                       <thead>
+                           <tr>
+                               <th>No</th>
+                               <th>Name</th>
+                               <th>Contact</th>
+                               <th>E-Mail</th>
+                               <th>Trip Name</th>
+                               <th>Actions</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td>1</td>
+                               <td>Ashutosh Shrestha</td>
+                               <td>9865554277</td>
+                               <td>ashu.stha08@gmail.com</td>
+                               <td>Paragliding</td>
+                               <td>
+                                   <button class="btn btn-danger">Delete</button>
+                                   <button class="btn btn-success">Acknowledge</button>
+                                   <button class="btn btn-primary"><span class="glyphicon glyphicon-ok"></button>
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>2</td>
+                               <td>Sanat Mool</td>
+                               <td>9860052577</td>
+                               <td>sanat.mool08@gmail.com</td>
+                               <td>Bunji</td>
+                               <td>
+                                   <button class="btn btn-danger">Delete</button>
+                                   <button class="btn btn-success">Acknowledge</button>
+                                   <button class="btn btn-primary"><span class="glyphicon glyphicon-ok"></button>
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>3</td>
+                               <td>Sagar Hoda</td>
+                               <td>9866587458</td>
+                               <td>sagar.hoda08@gmail.com</td>
+                               <td>Trekking</td>
+                               <td>
+                                   <button class="btn btn-danger">Delete</button>
+                                   <button class="btn btn-success">Acknowledge</button>
+                                   <button class="btn btn-primary"><span class="glyphicon glyphicon-ok"></button>
+                               </td>
+                           </tr>
+                       </tbody>
+                   </table>
+                 </div>
+               </div>
+             </div>
+            </div>
+          </div>
+          <div id="add-trip" class="tab-pane fade">
+            <form class="form-horizontal">
+              <div class="title">
+                <h1>Add a new trip</h1>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Trip Name</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="name" placeholder="Trip name" name="name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="sel1">Select city</label>
+                <div class="col-sm-3">
+                  <select class="form-control" id="sel1">
+                    <option>Kathmandu</option>
+                    <option>Pokhara</option>
+                    <option>Lumbini</option>
+                    <option>Chitwan</option>
+                  </select>
+                </div> 
+
+                <label class="control-label col-sm-2" for="sel2">Select Activity</label>
+                <div class="col-sm-3">
+                  <select class="form-control" id="sel2">
+                    <option>Kathmandu</option>
+                    <option>Pokhara</option>
+                    <option>Lumbini</option>
+                    <option>Chitwan</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="duration">Duration</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="duration" placeholder="How long is the trip?" name="duration">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="group-size">Group Size</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="group-size" placeholder="No. of People Eg: 4 adults 2 childern" name="group-size">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Difficulty level</label>
+                <div class="col-sm-8">
+                  <div class="radio">
+                        <label><input type="radio" name="optradio">1</label>
+                        <label><input type="radio" name="optradio">2</label>
+                        <label><input type="radio" name="optradio">3</label>
+                        <label><input type="radio" name="optradio">4</label>
+                        <label><input type="radio" name="optradio">5</label>
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="altitude">Max Altitude</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="altitude" placeholder="Eg: 3000M" name="altitude">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="price">Price</label>
+                <div class="col-sm-8">
+                  <div class="input-group">
+                     <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                     <input id="price" type="text" class="form-control" name="price" placeholder="Total price for the trip per person">
+                   </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="picture">Display Picture</label>
+                <div class="col-sm-8">
+                  <div class="input-group">
+                     <input id="picture" class="form-control" type="file" name="picture">
+                   </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="keyword">Keywords</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="keyword" placeholder="Keywords for the trip" name="keywords">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="description">Description</label>
+                <div class="col-sm-8">
+                  <textarea class="form-control" rows="5" id="description"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class=" col-sm-offset-2 col-sm-8">
+                  <button type="button" class="btn pull-right post-btn">Post</button>
+                  <button type="button" class="btn pull-right preview-btn">Preview</button> 
+                </div>
+              </div>
+            </form>
+          </div>
+          <div id="update-site" class="tab-pane fade">
+            <form class="form-horizontal">
+             <div class="title">
+               <h1>Update Current Site</h1>
+             </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Site Name</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="name" placeholder="Website Name" name="name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="contact">Contact No.</label>
+                <div class="col-sm-8">
+                  <input type="number" class="form-control" id="contact" placeholder="Contact no" name="contact">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="address">Address</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="address" placeholder="Companies address" name="address">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="about-us">About Us</label>
+                <div class="col-sm-8">
+                  <textarea class="form-control" rows="5" id="about-us"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class=" col-sm-offset-2 col-sm-8">
+                  <button type="button" class="btn pull-right post-btn">Post</button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+          <div id="update-existing-trips" class="tab-pane fade">
+            <div class="title">
+              <h1>Update Existing Trips</h1>
+              <div class="table">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Trip Name</th>
+                            <th>City</th>
+                            <th>Activity</th>
+                            <th>Duration</th>
+                            <th>Price</th>
+                            <th>Keywords</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Paragliding</td>
+                            <td>Pokhara</td>
+                            <td>Paragliding</td>
+                            <td>1 Day</td>
+                            <td>Rs. 7000</td>
+                            <td>pokhara,nepal,</td>
+                            <td style="text-align:center;">
+                                <button class="btn btn-success" data-toggle="modal" data-target="#myModal" contenteditable="false">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content"></div>
+                    </div>
+                    <div class="modal-dialog">
+                        <div class="modal-content"></div>
+                    </div>
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true" class="">×   </span><span class="sr-only">Close</span>
+
+                                </button>
+                                 <h4 class="modal-title" id="myModalLabel">Edit this Trip</h4>
+
+                            </div>
+                            <div class="modal-body">
+                              <form class="form-horizontal">
+
+                                <div class="form-group">
+                                  <label class="control-label col-sm-3" for="name">Trip Name</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="name" placeholder="Trip name" name="name">
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label class="control-label col-sm-3" for="sel1">Select city</label>
+                                  <div class="col-sm-3">
+                                    <select class="form-control" id="sel1">
+                                      <option>Kathmandu</option>
+                                      <option>Pokhara</option>
+                                      <option>Lumbini</option>
+                                      <option>Chitwan</option>
+                                    </select>
+                                  </div> 
+                                </div>
+
+                                <div class="form-group">
+                                  <label class="control-label col-sm-3" for="sel2">Activity</label>
+                                  <div class="col-sm-3">
+                                    <select class="form-control" id="sel2">
+                                      <option>Sightseeing</option>
+                                      <option>Paragliding</option>
+                                      <option>Treking</option>
+                                      <option>Bunji</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label class="control-label col-sm-3" for="duration">Duration</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="duration" placeholder="How long is the trip?" name="duration">
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label class="control-label col-sm-3" for="group-size">Group Size</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="group-size" placeholder="No. of People Eg: 4 adults 2 childern" name="group-size">
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label class="control-label col-sm-3" for="name">Difficulty level</label>
+                                  <div class="col-sm-8">
+                                    <div class="radio">
+                                          <label><input type="radio" name="optradio">1</label>
+                                          <label><input type="radio" name="optradio">2</label>
+                                          <label><input type="radio" name="optradio">3</label>
+                                          <label><input type="radio" name="optradio">4</label>
+                                          <label><input type="radio" name="optradio">5</label>
+                                        </div>
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label class="control-label col-sm-3" for="altitude">Max Altitude</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="altitude" placeholder="Eg: 3000M" name="altitude">
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label class="control-label col-sm-3" for="price">Price</label>
+                                  <div class="col-sm-8">
+                                    <div class="input-group">
+                                       <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                                       <input id="price" type="text" class="form-control" name="price" placeholder="Total price for the trip per person">
+                                     </div>
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label class="control-label col-sm-3" for="picture">Display Picture</label>
+                                  <div class="col-sm-8">
+                                    <div class="input-group">
+                                       <input id="picture" class="form-control" type="file" name="picture">
+                                     </div>
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label class="control-label col-sm-3" for="keyword">Keywords</label>
+                                  <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="keyword" placeholder="Keywords for the trip" name="keywords">
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label class="control-label col-sm-3" for="description">Description</label>
+                                  <div class="col-sm-8">
+                                    <textarea class="form-control" rows="5" id="description"></textarea>
+                                  </div>
+                                </div>
+                              </form>
+                            
+
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <hr>
+        <h3>&copy; Ghum Gham 2017</h3>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+  </body>
+</html>
